@@ -1,19 +1,28 @@
 PODS:
   - KASeparatorLine (1.0)
-  - MASShortcut (2.1.2)
-  - SSKeychain (1.2.3)
+  - MASShortcut (2.4.0)
+  - SAMKeychain (1.5.3)
   - StartAtLoginController (0.0.1)
 
 DEPENDENCIES:
   - KASeparatorLine (~> 1.0)
   - MASShortcut
-  - SSKeychain (~> 1.2.0)
+  - SAMKeychain
   - StartAtLoginController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KASeparatorLine
+    - MASShortcut
+    - SAMKeychain
+    - StartAtLoginController
 
 SPEC CHECKSUMS:
   KASeparatorLine: fb9f6a376f8e9a1cefd7b7b5867c51a45d012013
-  MASShortcut: ef92b912469f9f6744dba5f0a906665c26de760c
-  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+  MASShortcut: d9e4909e878661cc42877cc9d6efbe638273ab57
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   StartAtLoginController: 9ff14295bab38f7cba164a838349f6c0a2d83020
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: 64084f1fb777e4935297082664786050b7d37146
+
+COCOAPODS: 1.7.5

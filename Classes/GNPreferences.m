@@ -7,7 +7,7 @@
 //
 
 #import "GNPreferences.h"
-#import <SSKeychain.h>
+#import <SAMKeychain.h>
 #import <StartAtLoginController.h>
 #import "GNAccount.h"
 
@@ -101,7 +101,7 @@ static NSString *const kDefaultsKeyAutoCheckAfterInboxInterval  = @"AutoCheckAft
 
 - (void)removeAccount:(id)account {
     NSString *guid = [[account guid] copy];
-    [SSKeychain deletePasswordForService:GNAccountKeychainServiceName account:[account username]];
+    [SAMKeychain deletePasswordForService:GNAccountKeychainServiceName account:[account username]];
     [_accounts removeObject:account];
     [self writeBack];
     [[NSNotificationCenter defaultCenter] postNotificationName:GNAccountRemovedNotification object:self userInfo:@{@"guid": guid}];
@@ -134,7 +134,7 @@ static NSString *const kDefaultsKeyAutoCheckAfterInboxInterval  = @"AutoCheckAft
     [[NSUserDefaults standardUserDefaults] synchronize];
 
     for (id account in _accounts) {
-        [SSKeychain setPassword:[account password] forService:GNAccountKeychainServiceName account:[account username]];
+        [SAMKeychain setPassword:[account password] forService:GNAccountKeychainServiceName account:[account username]];
     }
 }
 

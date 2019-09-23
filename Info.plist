@@ -7,13 +7,13 @@
 	<key>CFBundleExecutable</key>
 	<string>Mail Notifr</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.ashchan.GmailNotifr</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3.5</string>
+	<string>1.3.6</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
